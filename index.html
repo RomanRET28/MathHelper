@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathHelper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="navigation-header"></div>
+        <div class="container">
+            <h1 class="dot">•&nbsp</h1>
+            <h1 class="neon">MathHelper</h1>
+            <h1 class="dot">&nbsp•</h1>
+        </div>
+        <hr/>
+        <div class="links">
+            <div class="box-btn">
+                <a><button class="btn link active">Решение квадратного уравнения</button></a>
+            </div>
+            <div class="box-btn">
+                <a href="circle.html"><button class="btn link">Площадь круга</button></a>
+            </div>
+            <div class="box-btn">
+                <a href="rectangle.html"><button class="btn link">Площадь прямоугольника</button></a>
+            </div>
+            <div class="box-btn">
+                <a href="tr.html"><button class="btn link">Площадь трапеции</button></a>
+            </div>
+            <div class="box-btn">
+                <a href="sus.html"><button class="btn link">Системы счисления</button></a>
+            </div>
+            <div class="box-btn">
+                <a href="Sum.html"><button class="btn link">Суммма углов n-угольника</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="card">
+            <h3>Вычисление корней квадратного уравнения дискриминантным методом</h3>
+            <p>Квадратное уравнение — алгебраическое уравнение второй степени, в котором x — неизвестное, а коэффициенты  a,  b и  c — вещественные или комплексные числа.</p>
+            <img src="img/qe.svg"/>
+            <h5>Формулы: D = b² - 4ac; если D>0, то x1 = (-b - √D) / (2a), x2 = (-b + √D) / (2a); если D=0, то x = -b / (2a); если D меньше 0, то корней нет.</h5>
+            <p>Коэффицент a</p>
+            <div class="group">      
+                <input placeholder="а=..." class="a input">
+                <span class="bar"></span>
+            </div>
+            <p>Коэффицент b</p>
+            <div class="group">      
+                <input placeholder="b=..." class="b input">
+                <span class="bar"></span>
+            </div>
+            <p>Коэффицент c</p>
+            <div class="group">      
+                <input placeholder="c=..." class="c input">
+                <span class="bar"></span>
+            </div>
+            <p>Ответ: </p>
+            <div class="group">      
+                <input placeholder="Тут будет ответ" class="result input">
+                <span class="bar"></span>
+            </div>
+            <div class="box-btn">
+                <button class="btn calc">Вычислить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
